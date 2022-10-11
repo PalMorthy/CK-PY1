@@ -4,7 +4,7 @@ src = not False and True or False and not True
 """
 not False and True == True and True == True
 False and not True == False and False == False
-False and True == True
+False or True == True
 """
 
 result = True  # TODO подставить результат выражения
