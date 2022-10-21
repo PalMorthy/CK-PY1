@@ -1,6 +1,5 @@
 def get_count_char(str_: str) -> dict:
     list_ = (str_.lower()).split(' ')
-    list_.sort()
     str_ = ''.join(list_)
     dict_ = {symbol: str_.count(symbol) for symbol in str_ if symbol.isalpha()}
     return dict_
@@ -20,5 +19,6 @@ main_str = """
     Далее нужно отсортировать слова в алфавитном порядке, а после сортировки склеить их с помощью метода строк join. Приступим!!!!
 """
 
-print(get_count_char(main_str))
-print(keys_pr(get_count_char(main_str)))
+if __name__ == "__main__":
+    print(get_count_char(main_str))
+    print(keys_pr(get_count_char(main_str)))
